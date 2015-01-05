@@ -1,0 +1,26 @@
+dependencies:
+- rpm:
+  - !!python/unicode 'python'
+- if $venv:
+  - rpm:
+    - python${py3}-virtualenv
+- else:
+  - rpm:
+    - python${py3}-django
+- rpm:
+  - vim-nerdtree
+  - vim-enhanced
+  - vim-command-t
+  - vim-X11
+  - ctags
+  - vim-taglist
+devassistant_version: 0.9.2
+original_kwargs:
+  github: !!python/unicode 'nolaan'
+  name: !!python/unicode '/home/nolaan/trash/pydevassist'
+  py3: !!python/unicode ''
+  venv: !!python/unicode ''
+  vim: true
+project_type:
+- python
+- django
